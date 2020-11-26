@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "dev": "parcel ./public/index.html",
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "postcss:watch": "postcss css/tailwind.css -o public/build/tailwind.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,14 @@
   },
   "homepage": "https://github.com/wilsonespina/random-color-matcher#readme",
   "dependencies": {
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^9.8.6",
     "chroma-js": "^2.1.0",
-    "postcss": "^8.1.9",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.35",
+    "tailwindcss": "^2.0.1-compat"
+  },
+  "devDependencies": {
     "postcss-cli": "^8.3.0",
-    "postcss-import": "^13.0.0",
-    "tailwindcss": "^2.0.1"
+    "postcss-import": "^13.0.0"
   }
 }

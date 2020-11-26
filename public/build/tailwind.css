@@ -26742,6 +26742,7 @@ video {
 .select-all {
   -webkit-user-select: all;
      -moz-user-select: all;
+      -ms-user-select: all;
           user-select: all;
 }
 
@@ -31167,9 +31168,17 @@ video {
           animation: bounce 1s infinite;
 }
 
-h1 {
-  color: purple;
-}
+.color-block--1, .color-block--4 {
+    background-color: cyan;
+  }
+
+.color-block--2, .color-block--5 {
+    background-color: pink;
+  }
+
+.color-block--3, .color-block--6 {
+    background-color: purple;
+  }
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -57355,6 +57364,7 @@ h1 {
   .sm\:select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -87899,6 +87909,7 @@ h1 {
   .md\:select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -118443,6 +118454,7 @@ h1 {
   .lg\:select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -148987,6 +148999,7 @@ h1 {
   .xl\:select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 
@@ -179531,6 +179544,7 @@ h1 {
   .\32xl\:select-all {
     -webkit-user-select: all;
        -moz-user-select: all;
+        -ms-user-select: all;
             user-select: all;
   }
 

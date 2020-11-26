@@ -7,8 +7,8 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"async defer></script>
-  <script src="./index.js" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" async defer></script>
+  <script src="./index.js" defer></script>
   <link rel="stylesheet" href="./build/tailwind.css">
 </head>
 
@@ -16,15 +16,18 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <main>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>6</div>
-    <div>7</div>
-    <button>PICK COLOR</button>
-  </main>
+    <main class="relative">
+      <div class="grid grid-cols-1 gap-4 align-center">
+        <div class="w-10/12 color-block color-block--1" id="block-1">1</div>
+        <div class="w-10/12 color-block color-block--2" id="block-2">2</div>
+        <div class="w-10/12 color-block color-block--3" id="block-3">3</div>
+        <div class="w-10/12 color-block color-block--4" id="block-4">4</div>
+        <div class="w-10/12 color-block color-block--5" id="block-5">5</div>
+        <div class="w-10/12 color-block color-block--6" id="block-6">6</div>
+      </div>
+      <button id="button" class="btn">PICK COLOR</button>
+    </main>
+
 </body>
 
 </html>

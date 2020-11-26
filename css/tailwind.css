@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    color: purple;
+.color-block {
+  &--1, &--4 {
+    background-color: cyan;
   }
+  &--2, &--5 {
+    background-color: pink;
+  }
+  &--3, &--6 {
+    background-color: purple;
+  }
+}
