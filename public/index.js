@@ -31,12 +31,6 @@ const button = document.getElementById('button');
   const color4 = hexColorsMap[scale[3]];
   const color5 = hexColorsMap[scale[4]];
 
-
-  // console.log("->  ~ file: index.js ~ line 32 ~ color1", colorsMap[color1])
-  // console.log("->  ~ file: index.js ~ line 34 ~ color6", colorsMap[color6])
-  // console.log("->  ~ file: index.js ~ line 51 ~ color2", color2)
-
-  // const hexColor = colorsMap[color];
   block1.style.backgroundColor = `${color1}`;
   block2.style.backgroundColor = scale[1];
   block3.style.backgroundColor = scale[2];
@@ -47,5 +41,11 @@ const button = document.getElementById('button');
   block1.innerHTML = color1;
   block6.innerHTML = color6;
 
+
 })()
+
+button.addEventListener('click', () => {
+  location.reload();
+})
+
 

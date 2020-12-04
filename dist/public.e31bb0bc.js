@@ -758,11 +758,7 @@ var button = document.getElementById('button');
 
   var color3 = _colors.hexColorsMap[scale[2]];
   var color4 = _colors.hexColorsMap[scale[3]];
-  var color5 = _colors.hexColorsMap[scale[4]]; // console.log("->  ~ file: index.js ~ line 32 ~ color1", colorsMap[color1])
-  // console.log("->  ~ file: index.js ~ line 34 ~ color6", colorsMap[color6])
-  // console.log("->  ~ file: index.js ~ line 51 ~ color2", color2)
-  // const hexColor = colorsMap[color];
-
+  var color5 = _colors.hexColorsMap[scale[4]];
   block1.style.backgroundColor = "".concat(color1);
   block2.style.backgroundColor = scale[1];
   block3.style.backgroundColor = scale[2];
@@ -772,6 +768,10 @@ var button = document.getElementById('button');
   block1.innerHTML = color1;
   block6.innerHTML = color6;
 })();
+
+button.addEventListener('click', function () {
+  location.reload();
+});
 },{"./constants/colors":"constants/colors.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -800,7 +800,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64407" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49468" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

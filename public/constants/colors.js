@@ -1,4 +1,4 @@
- export const cssColors = {
+export const cssColors = {
     0: "AliceBlue",
     1: "AntiqueWhite",
     2: "Aqua",

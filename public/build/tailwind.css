@@ -31168,17 +31168,14 @@ video {
           animation: bounce 1s infinite;
 }
 
-.color-block--1, .color-block--4 {
-    background-color: cyan;
-  }
+main {
+  height: 100%;
+  width: 80vw;
+}
 
-.color-block--2, .color-block--5 {
-    background-color: pink;
-  }
-
-.color-block--3, .color-block--6 {
-    background-color: purple;
-  }
+.color-block {
+  background-color: white;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
