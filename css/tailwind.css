@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --fadeIn: 1.2s;
+}
+
 main {
   height: 100%;
   width: 80vw;
@@ -9,4 +13,58 @@ main {
 
 .color-block {
   background-color: white;
+}
+
+/* Animations */
+
+.fade-in {
+  animation: fadeIn ease var(--fadeIn);
+  -webkit-animation: fadeIn ease var(--fadeIn);
+  -moz-animation: fadeIn ease var(--fadeIn);
+  -o-animation: fadeIn ease var(--fadeIn);
+  -ms-animation: fadeIn ease var(--fadeIn);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
