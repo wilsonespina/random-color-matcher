@@ -7,4 +7,4 @@ A random CSS color matcher that generates a new set of complimentary colors.
 * [Parcel](https://parceljs.org/)
 * [Postcss](https://postcss.org/)
 
-![](color-recording.gif)
+<image src="color-recording.gif" width="400px">
