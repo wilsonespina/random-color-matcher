@@ -2,12 +2,8 @@
 // https://tailwindcss.com/docs/customizing-colors
 // https://www.w3schools.com/colors/colors_hex.asp
 
-import colorsMap, { cssColors, hexColorsMap } from './constants/colors';
+import { cssColors, hexColorsMap } from './constants/colors.js';
 
-console.log("🚀 ~ file: index.js:6 ~ colorsMap:", colorsMap)
-console.log("🚀 ~ file: index.js:6 ~ hexColorsMap:", hexColorsMap)
-console.log("🚀 ~ file: index.js:6 ~ cssColors:", cssColors)
-console.log('HERE>>>>>>')
 function pickRandomNumber (total = 147) {
   return Math.floor(Math.random() * total);
 }

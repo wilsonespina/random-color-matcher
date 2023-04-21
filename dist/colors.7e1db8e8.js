@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.hexColorsMap = exports.cssHex = exports.cssColors = void 0;
+exports.default = exports.colorsMap = exports.hexColorsMap = exports.cssHex = exports.cssColors = void 0;
 var cssColors = {
   0: "AliceBlue",
   1: "AntiqueWhite",
@@ -718,7 +718,13 @@ var colorsMap = {
   Yellow: "FFFF00",
   YellowGreen: "9ACD32"
 };
-var _default = colorsMap;
+exports.colorsMap = colorsMap;
+var _default = {
+  cssColors: cssColors,
+  cssHex: cssHex,
+  hexColorsMap: hexColorsMap,
+  colorsMap: colorsMap
+};
 exports.default = _default;
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -748,7 +754,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65415" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52593" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

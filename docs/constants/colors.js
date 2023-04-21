@@ -442,7 +442,7 @@ export const hexColorsMap = {
     "FFFFFF": "White"
 }
 
-const colorsMap = {
+export const colorsMap = {
     AliceBlue: "F0F8FF",
     AntiqueWhite: "FAEBD7",
     Aqua: "00FFFF",
@@ -593,4 +593,9 @@ const colorsMap = {
     YellowGreen: "9ACD32"
 }
 
-export default colorsMap;
+export default {
+  cssColors,
+  cssHex,
+  hexColorsMap,
+  colorsMap
+};
