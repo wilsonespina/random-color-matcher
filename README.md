@@ -1,5 +1,15 @@
 A random CSS color matcher that generates a new set of complimentary colors.
 
+https://wilsonespina.github.io/random-color-matcher/
+
+## Running the app
+
+```bash
+npm i
+
+npm run dev
+```
+
 ## Technologies Used
 
 * [Tailwindcss](https://tailwindcss.com/)
