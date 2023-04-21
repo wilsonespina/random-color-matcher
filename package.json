@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel ./public/index.html",
+    "dev": "parcel ./docs/index.html",
     "build": "postcss css/tailwind.css -o public/build/tailwind.css",
     "postcss:watch": "postcss css/tailwind.css -o public/build/tailwind.css -w"
   },
