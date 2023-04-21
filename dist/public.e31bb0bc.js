@@ -721,24 +721,20 @@ var colorsMap = {
 var _default = colorsMap;
 exports.default = _default;
 },{}],"index.js":[function(require,module,exports) {
-"use strict";
-
-var _colors = _interopRequireWildcard(require("./constants/colors"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
 // https://vis4.net/chromajs
 // https://tailwindcss.com/docs/customizing-colors
 // https://www.w3schools.com/colors/colors_hex.asp
+var _require = require('./constants/colors'),
+    cssColors = _require.cssColors,
+    hexColorsMap = _require.hexColorsMap;
+
 function pickRandomNumber() {
   var total = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 147;
   return Math.floor(Math.random() * total);
 }
 
 function pickRandomColor(number) {
-  return _colors.cssColors[number];
+  return cssColors[number];
 }
 
 var block1 = document.querySelector('#block-1');
@@ -753,12 +749,10 @@ var button = document.getElementById('button');
   var color1 = pickRandomColor(pickRandomNumber());
   var color6 = pickRandomColor(pickRandomNumber());
   var scale = chroma.scale([color1, color6]).mode('lch').colors(6);
-
-  var color2 = _colors.hexColorsMap[scale[1].toUpperCase().substring(1)];
-
-  var color3 = _colors.hexColorsMap[scale[2]];
-  var color4 = _colors.hexColorsMap[scale[3]];
-  var color5 = _colors.hexColorsMap[scale[4]];
+  var color2 = hexColorsMap[scale[1].toUpperCase().substring(1)];
+  var color3 = hexColorsMap[scale[2]];
+  var color4 = hexColorsMap[scale[3]];
+  var color5 = hexColorsMap[scale[4]];
   block1.style.backgroundColor = "".concat(color1);
   block2.style.backgroundColor = scale[1];
   block3.style.backgroundColor = scale[2];
@@ -800,7 +794,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49717" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52689" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

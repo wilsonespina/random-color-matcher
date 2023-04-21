@@ -2,7 +2,7 @@
 // https://tailwindcss.com/docs/customizing-colors
 // https://www.w3schools.com/colors/colors_hex.asp
 
-import colorsMap, { cssColors, hexColorsMap } from './constants/colors';
+const { cssColors, hexColorsMap } = require('./constants/colors');
 
 function pickRandomNumber (total = 147) {
   return Math.floor(Math.random() * total);
