@@ -1,4 +1,4 @@
-A random CSS color matcher that generates a new set of complimentary colors.
+A random CSS color matcher that generates a new set of complimentary colors. This is a small project to experiment with Tailwindcss and how to calculate complimentary colors.
 
 https://wilsonespina.github.io/random-color-matcher/
 
