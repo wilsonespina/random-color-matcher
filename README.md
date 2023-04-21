@@ -2,6 +2,8 @@ A random CSS color matcher that generates a new set of complimentary colors.
 
 https://wilsonespina.github.io/random-color-matcher/
 
+<image src="color-recording.gif" width="400px">
+
 ## Running the app
 
 ```bash
@@ -17,4 +19,4 @@ npm run dev
 * [Parcel](https://parceljs.org/)
 * [Postcss](https://postcss.org/)
 
-<image src="color-recording.gif" width="400px">
+
